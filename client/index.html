@@ -1,0 +1,27 @@
+<html ng-app="myApp">
+<head>
+  <style>
+    img{
+      height:200px;
+    }
+    td{
+      border-style:solid;
+    }
+  </style>
+  <title>Login and Registration Demo</title>
+  <!-- require angular -->
+  <script type="text/javascript" src="angular/angular.min.js"></script>
+  <script type="text/javascript" src="angular/angular-route.min.js"></script>
+  <script>
+    var myApp = angular.module('myApp', ['ngRoute']);
+  </script>
+  <script type="text/javascript" src = "assets/routes.js"></script>
+  <script type="text/javascript" src = "assets/factories.js"></script>
+  <script type="text/javascript" src = "assets/controllers.js"></script>
+  <script type="text/javascript" src = "assets/showController.js"></script>
+  <script type='text/javascript' src = 'assets/dashboardcontroller.js'></script>
+  </head>
+  <body>
+    <div ng-view = "">
+    </div>
+  </body>

@@ -1,0 +1,15 @@
+
+<a href = "#/">Home</a> | <a href = '#/home'>Logout</a>
+
+
+<h1>{{Users.name}}'s Bucket List</h1>
+
+
+<p>Done</p>
+<form  ng-repeat="x in Users">
+  <input type='checkbox'>{{x.tagged.name}} - {{x.title}} {{x.description}} {{x.createdAt.slice(0,10)}}</input>
+</form>
+<p>Pending</p>
+<div ng-repeat="bucket in Users">
+        <p>{{bucket.user.name}} | {{bucket.title}} - {{bucket.description}} - {{bucket.createdAt}}</p>
+     </div>
